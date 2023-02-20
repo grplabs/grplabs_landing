@@ -1,461 +1,696 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.LGLeeN-keyboard-shortcuts-view{display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}.LGLeeN-keyboard-shortcuts-view table,.LGLeeN-keyboard-shortcuts-view tbody,.LGLeeN-keyboard-shortcuts-view td,.LGLeeN-keyboard-shortcuts-view tr{background:inherit;border:none;margin:0;padding:0}.LGLeeN-keyboard-shortcuts-view table{display:table}.LGLeeN-keyboard-shortcuts-view tr{display:table-row}.LGLeeN-keyboard-shortcuts-view td{-moz-box-sizing:border-box;box-sizing:border-box;display:table-cell;color:#000;padding:6px;vertical-align:middle;white-space:nowrap}.LGLeeN-keyboard-shortcuts-view td .VdnQmO-keyboard-shortcuts-view--shortcut-key{background-color:#e8eaed;border-radius:2px;border:none;-moz-box-sizing:border-box;box-sizing:border-box;color:inherit;display:inline-block;font-family:Google Sans Text,Roboto,Arial,sans-serif;line-height:16px;margin:0 2px;min-height:20px;min-width:20px;padding:2px 4px;position:relative;text-align:center}
-</style><style>.gm-control-active>img{box-sizing:content-box;display:none;left:50%;pointer-events:none;position:absolute;top:50%;transform:translate(-50%,-50%)}.gm-control-active>img:nth-child(1){display:block}.gm-control-active:focus>img:nth-child(1),.gm-control-active:hover>img:nth-child(1),.gm-control-active:active>img:nth-child(1),.gm-control-active:disabled>img:nth-child(1){display:none}.gm-control-active:focus>img:nth-child(2),.gm-control-active:hover>img:nth-child(2){display:block}.gm-control-active:active>img:nth-child(3){display:block}.gm-control-active:disabled>img:nth-child(4){display:block}
-</style><link type="text/css" rel="stylesheet" href="./template/css"><link type="text/css" rel="stylesheet" href="./template/css(1)"><style>.gm-ui-hover-effect{opacity:.6}.gm-ui-hover-effect:hover{opacity:1}.gm-ui-hover-effect>span{background-color:#000}@media (forced-colors:active),(prefers-contrast:more){.gm-ui-hover-effect>span{background-color:ButtonText}}
-</style><style>.gm-style .gm-style-cc a,.gm-style .gm-style-cc button,.gm-style .gm-style-cc span,.gm-style .gm-style-mtc div{font-size:10px;box-sizing:border-box}.gm-style .gm-style-cc a,.gm-style .gm-style-cc button,.gm-style .gm-style-cc span{outline-offset:3px}
-</style><style>@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style>.gm-style-moc{background-color:rgba(0,0,0,.45);pointer-events:none;text-align:center;transition:opacity ease-in-out}.gm-style-mot{color:white;font-family:Roboto,Arial,sans-serif;font-size:22px;margin:0;position:relative;top:50%;transform:translateY(-50%);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%)}
-</style><style>.gm-style img{max-width: none;}.gm-style {font: 400 11px Roboto, Arial, sans-serif; text-decoration: none;}</style>
-    
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>GRPLabs</title>
+  <link media="all" rel="stylesheet" href="assets/css/vendor.min.css">
+  <link media="all" rel="stylesheet" href="assets/css/styles.min.css">
+</head>
 
-    <!-- Page Title-->
-    <title>GRPLabs - outsourcing blockchain company</title>
-
-    <!-- Meta Tags-->
-    <meta name="description" content="GRPLabs - outsourcing blockchain company">
-    <meta name="keywords" content="grplabs, GRPLabs, coming soon, blockchain, outsource, crypto">
-    <meta name="author" content="grplabs">
-
-    <!-- Viewport Meta-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- Template Favicon & Icons Start -->
-    <link rel="icon" href="https://grplabs.com/template/favicon.ico" sizes="any">
-    <link rel="icon" href="https://grplabs.com/template/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="https://grplabs.com/template/apple-touch-icon.png">
-    <link rel="manifest" href="https://grplabs.com/template/manifest.webmanifest">
-    <!-- Template Favicon & Icons End -->
-
-    <!-- Facebook Metadata Start -->
-    <meta property="og:image:height" content="1200">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:title" content="GRPLabs - outsourcing blockchain company">
-    <meta property="og:description" content="GRPLabs - outsourcing blockchain company">
-    <meta property="og:url" content="https://grplabs.com">
-    <meta property="og:image" content="https://grplabs.comimg/favicon/og-image.jpg">
-    <!-- Facebook Metadata End -->
-
-    <!-- Template Styles Start -->
-    <link rel="stylesheet" type="text/css" href="./template/loader.css">
-    <link rel="stylesheet" type="text/css" href="./template/plugins.css">
-    <link rel="stylesheet" type="text/css" href="./template/main.css">
-    <!-- Template Styles End -->
-
-    <!-- Custom Browser Color Start -->
-    <meta name="theme-color" content="#e51743">
-    <meta name="msapplication-navbutton-color" content="#e51743">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#e51743">
-    <!-- Custom Browser Color End -->
-
-  <script type="text/javascript" charset="UTF-8" src="./template/common.js"></script><script type="text/javascript" charset="UTF-8" src="./template/util.js"></script><script type="text/javascript" charset="UTF-8" src="./template/map.js"></script><script type="text/javascript" charset="UTF-8" src="./template/marker.js"></script><script type="text/javascript" charset="UTF-8" src="./template/onion.js"></script><script type="text/javascript" charset="UTF-8" src="./template/controls.js"></script><style id="rds_highlighting">a.rds_hl_nofollow {text-decoration: line-through !important;}img.rds_hl_nofollow {outline: 1px dashed #000;}</style></head>
-
-  <body class="main-fullscreen loaded">
-
-    <!-- Loader Start -->
-    <div class="loader is-animated loaded">
-      <div class="loader__container">
-        <div class="loader__content">
-          <div class="loader__text">
-            <!-- Your Text Here -->
-            <span class="outline-colored">Coming soon</span>
-            <span class="outline-colored">Coming soon</span>
-            <span class="outline-colored">Coming soon</span>
+<body>
+  <div class="wrapper">
+    <header class="header js-header">
+      <div class="container">
+        <div class="header__wrap">
+          <a href="index.html" class="logo">
+            <img src="assets/images/logo.svg" alt="img" />
+          </a>
+          <div class="header__nav">
+            <nav class="nav js-burger">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="#about" class="nav__link js-link-to js-burger-close">About us</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link js-link-to js-burger-close">Services</a></li>
+                <li class="nav__item"><a href="#how" class="nav__link js-link-to js-burger-close">How do we work</a></li>
+                <li class="nav__item"><a href="#portfolio" class="nav__link js-link-to js-burger-close">Portfolio</a></li>
+                <li class="nav__item"><a href="#why" class="nav__link js-link-to js-burger-close">Why us</a></li>
+              </ul>
+              <a href="#contact" class="btn secondary nav__btn js-link-to js-burger-close">Contact us</a>
+            </nav>
+          </div>
+          <div class="burger js-burger-open">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
-        <div class="loader__caption">
-          <p>by
-            <a href="#" target="_blank">GRPLabs</a>
-          </p>
-        </div>
       </div>
-    </div>
-    <!-- Loader End -->
+    </header>
 
-    <!-- Navigation Start -->
-    <nav id="menu" class="menu">
+    <main class="main">
+      <section class="intro-section">
+        <div class="container">
+          <div class="intro-wrap text-center">
+            <h1 class="main-title mb-15 mb-lg-25"><span class="gradient-text">GRPLabs</span> outsourcing blockchain company</h1>
+            <p class="base-text mb-3">
+              We build stellar products with elite blockchain engineers for global web3 startups <br class="tablet"/>
+              products with elite blockchain engineers for global web3 startups
+            </p>
+            <a href="#" class="btn primary big">Get in touch</a>
+          </div>
 
-      <!-- Navigation Controls Start -->
-      <div class="menu__controls controls-block">
-        <div class="color-layer color-layer-dark"></div>
-        <a href="https://grplabs.com/template/index.html#" id="menu-close" class="section-close menu-close link-s">Close</a>
-      </div>
-      <!-- Navigation Controls End -->
-
-      <div class="fullscreen-wrapper">
-        <div class="container-fluid p-0 fullheight-mobile">
-          <div class="row g-0 fullheight-mobile">
-
-            <!-- Menu Navigation Block Start -->
-            <div class="col-12 menu__navigation">
-              <div class="navigation-container">
-                <!-- Navigation links -->
-                <ul class="navigation">
-                  <li>
-                    <a href="#" id="home-trigger" class="navigation__item active-link link-l">Home</a>
-                  </li>
-                  <li>
-                    <a href="#"  class="navigation__item link-l">About us</a>
-                    <!-- <a href="#" id="about-trigger" class="navigation__item link-l">About us</a> -->
-                  </li>
-                  <li>
-                    <a href="#"  class="navigation__item link-l">Our works</a>
-                  </li>
-                  <li>
-                    <a href="#"  class="navigation__item link-l">Contact</a>
-                  </li>
-                </ul>
+          <div class="intro-info">
+            <div class="intro-info__wrap">
+              <div class="intro-info__content">
+                <p class="intro-info__text">
+                  At <span>GRPLabs</span>, we offer a wide range of services to help businesses in the blockchain, web3, and crypto space succeed.
+                  Our services include:
+                </p>
+                <div class="intro-info__link">
+                  <a href="#" class="intro-info__btn">See our portfolio</a>
+                  <span class="gradient-line"></span>
+               </div>
+              </div>
+              <div class="intro-info__img">
+               <img src="assets/images/intro-info.svg" alt="img">
               </div>
             </div>
-            <!-- Menu Navigation Block End -->
-
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Scale Out Animation Hover Layer Start -->
-      <div class="menu__hover"></div>
-      <!-- Scale Out Animation Hover Layer End -->
-
-    </nav>
-    <!-- Navigation End -->
-
-    <!-- Main Screen Slider Section Start -->
-    <section id="main" class="main fullscreen transparent">
-      <div class="fullscreen-wrapper">
-
-        <!-- Fullscreen Background Start-->
-        <div class="fullscreen-bg fullscreen-bg-2">
-          <!-- Dark gradient cover layer -->
-          <div class="color-layer color-layer-medium"></div>
-
-          <!-- Background Effect Start -->
-          <div id="nightsky-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="2880" height="1458"></canvas></div>
-          <!-- Background Effect End -->
-
-        </div>
-        <!-- Fullscreen Background End-->
-
-        <!-- Header Start -->
-        <div class="main__header">
-
-          <!-- Logo Start -->
-          <div class="header__logo">
-            <!-- Your Logo Here -->
-            <img src="./template/GRPLabs-logo.svg" alt="GRPLabs - Coming Soon">
-          </div>
-          <!-- Logo End -->
-
-          <!-- Notify Trigger Start -->
-          <a href="https://t.me/grplabs" target="_blank" class="notify-trigger-top top-right-trigger link-s">
-            <i class="fa-solid fa-bell"></i>
-            <span class="caption">Write me</span>
-          </a>
-          <!-- Notify Trigger End -->
-
-          <!-- Menu Trigger Start -->
-          <div class="header__menubutton top-left">
-            <a href="https://grplabs.com/template/index.html#0" id="menu-trigger" class="menu-trigger link-s"><span></span></a>
-          </div>
-          <!-- Menu Trigger End -->
-
-        </div>
-        <!-- Header End -->
-
-        <div class="container-fluid p-0 fullheight-mobile">
-          <div class="row g-0 fullheight-mobile">
-
-            <!-- Main Section Intro Start -->
-            <div class="col-12 main__intro fullheight-mobile">
-
-              <!-- Intro Content Start -->
-              <div class="intro__content fullheight-mobile">
-
-                <!-- Headline Start -->
-                <div id="headline" class="headline center">
-                  <h1 class="large"><span class="outline-white">Coming soon</span></h1>
-                  <div class="headline__countdownholder">
-
-                    <!-- Countdown Start-->
-                    <!-- <div class="countdown countdown-headline">
-                      <div id="countdown-large" class="is-countdown"><span class="countdown-row countdown-show4"><span class="countdown-section"><span class="countdown-amount">0</span><span class="countdown-period">Days</span></span><span class="countdown-section"><span class="countdown-amount">0</span><span class="countdown-period">Hours</span></span><span class="countdown-section"><span class="countdown-amount">0</span><span class="countdown-period">Minutes</span></span><span class="countdown-section"><span class="countdown-amount">0</span><span class="countdown-period">Seconds</span></span></span></div>
-                      <span class="help-text">Left to our launch</span>
-                    </div> -->
-                    <!-- Countdown End-->
-
+      <section class="about-section" id="about">
+        <div class="container">
+          <div class="about-wrap">
+            <div class="about">
+              <div class="about__wrap">
+                <div class="about__details">
+                  <div class="about__category">
+                    <div class="about__category-wrap">
+                      <div class="about__icon">
+                        <img src="assets/images/project.svg" alt="img" />
+                        <span class="blur-bg"></span>
+                      </div>
+                      <span class="about__number">65</span>
+                      <p class="about__descr">projects</p>
+                    </div>
+                  </div>
+                  <div class="about__category">
+                    <div class="about__category-wrap">
+                      <div class="about__icon">
+                        <img src="assets/images/clocks.svg" alt="img" />
+                        <span class="blur-bg"></span>
+                      </div>
+                      <span class="about__number">8k+</span>
+                      <p class="about__descr">hours of work</p>
+                    </div>
                   </div>
                 </div>
-                <!-- Headline End -->
-
+                <div class="about__text">
+                  <h2 class="section-title"><span class="gradient-text">About</span> us</h2>
+                  <p class="base-text">
+                    Since 2018, our team has been dedicated to delivering top-notch solutions to our clients. We work with
+                    industries such as
+                    finance, gaming, e-commerce and take pride in having assisted them in achieving their business objectives.
+                    We have received
+                    recognition for our contributions to the industry and committed to continuing to offer our clients the
+                    best services and
+                    solutions in the blockchain, web3, and crypto space
+                  </p>
+                </div>
               </div>
-              <!-- Intro Content End -->
 
             </div>
-            <!-- Main Section Intro End -->
-
-            <!-- Explore Button Start -->
-            <div class="intro__explore absolute">
-              <a href="https://docsend.com/view/ybqtbtrgb25yp46e" target="_blank" class="explore vertical animated link-s">
-                <span>Explore</span>
-                <span>Explore</span>
-                <span>Explore</span>
-              </a>
+          </div>
+        </div>
+      </section>
+      <section class="services-section" id="services">
+        <div class="container">
+          <div class="services-head">
+            <h2 class="section-title mb-2"><span class="gradient-text">Services</span></h2>
+            <p class="base-text">
+              At GRPLabs, we offer a wide range of services to help businesses in the blockchain, web3, and crypto space to
+              succeed. Our services
+              include:
+            </p>
+          </div>
+          <div class="services-swiper slider-right-hidden js-services-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="services">
+                  <div class="services__wrap"></div>
+                  <div class="services__img">
+                    <img src="assets/images/services1.svg" alt="img" />
+                    <span class="blur-bg"></span>
+                  </div>
+                  <p class="big-text mb-2">DEX/swaps & Staking platform</p>
+                  <p class="base-text">We can create platforms that allow users to trade and swap digital assets in a
+                    decentralized manner.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="services">
+                  <div class="services__wrap"></div>
+                  <div class="services__img">
+                    <img src="assets/images/services2.svg" alt="img" />
+                    <span class="blur-bg"></span>
+                  </div>
+                  <p class="big-text mb-2">NFT marketplaces & Collections</p>
+                  <p class="base-text">We have expertise in developing marketplaces for buying and selling NFTs.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="services">
+                  <div class="services__wrap"></div>
+                  <div class="services__img">
+                    <img src="assets/images/services5.svg" alt="img" />
+                    <span class="blur-bg"></span>
+                  </div>
+                  <p class="big-text mb-2">P2E & Metaverse SDK</p>
+                  <p class="base-text">We have experience in creating Play2Earn projects, including crypto games and A+AA
+                    crypto games</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="services">
+                  <div class="services__wrap"></div>
+                  <div class="services__img">
+                    <img src="assets/images/services6.svg" alt="img" />
+                    <span class="blur-bg"></span>
+                  </div>
+                  <p class="big-text mb-2">Investment & tokenization platforms</p>
+                  <p class="base-text">We have expertise in building investment platforms that allow users to invest in
+                    various assets</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="services">
+                  <div class="services__wrap"></div>
+                  <div class="services__img">
+                    <img src="assets/images/services3.svg" alt="img" />
+                    <span class="blur-bg"></span>
+                  </div>
+                  <p class="big-text mb-2">Crowdfunding platforms (IDO)</p>
+                  <p class="base-text">We can develop crowdfunding platforms for conducting Initial DEX Offering (IDO)</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="services">
+                  <div class="services__wrap"></div>
+                  <div class="services__img">
+                    <img src="assets/images/services4.svg" alt="img" />
+                    <span class="blur-bg"></span>
+                  </div>
+                  <p class="big-text mb-2">Custom blockchains</p>
+                  <p class="base-text">We have experience with custom blockchain solutions for various industries and use
+                    cases</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="services">
+                  <div class="services__wrap"></div>
+                  <div class="services__img">
+                    <img src="assets/images/services7.svg" alt="img" />
+                    <span class="blur-bg"></span>
+                  </div>
+                  <p class="big-text mb-2">Mobile wallet &/or Portfolio management app</p>
+                  <p class="base-text">We can create mobile wallets that allow users to store and manage their digital assets,
+                    or to track and manage their investments</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="services">
+                  <div class="services__wrap"></div>
+                  <div class="services__img">
+                    <img src="assets/images/services8.svg" alt="img" />
+                    <span class="blur-bg"></span>
+                  </div>
+                  <p class="big-text mb-2">Neobank, Payment apps for merchants, P2P lending platform</p>
+                  <p class="base-text">We can develop platforms that allow users to lend and borrow digital assets in a
+                    peer-to-peer manner</p>
+                </div>
+              </div>
             </div>
-            <!-- Explore Button End -->
+            <div class="services-swiper__buttons">
+              <div class="swiper-btn swiper-btn-prev">
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.82837 1.02026L2.02026 7.82837L8.82837 14.6365" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <div class="swiper-btn swiper-btn-next">
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.803345 1.02026L7.61145 7.82837L0.803345 14.6365" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="platforms-section" id="platforms">
+        <div class="container">
+          <div class="platforms">
+            <div class="platforms-wrap">
+              <div class="platform">
+                <div class="platform__border">
+                  <div class="platform__wrap">
+                    <p class="small-text">Custom blockchain</p>
+                  </div>
+                </div>
+              </div>
 
-            <!-- Socials Start -->
-            <div class="socials bottom-left">
-              <ul>
-                <!-- <li>
-                  <a href="https://www.facebook.com/" class="link-s" target="_blank">Fb</a>
+              <div class="platform">
+                <div class="platform__border">
+                  <div class="platform__wrap">
+                    <p class="small-text">NFT marketplace</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="platform">
+                <div class="platform__border">
+                  <div class="platform__wrap">
+                    <p class="small-text">Exchanges</p>
+                  </div>
+                </div>
+              </div>
+              <div class="platform">
+                <div class="platform__border">
+                  <div class="platform__wrap">
+                    <p class="small-text">Tokenization platform</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="platform">
+                <div class="platform__border">
+                  <div class="platform__wrap">
+                    <p class="small-text">P2P lending platform</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="platform">
+                <div class="platform__border">
+                  <div class="platform__wrap">
+                    <p class="small-text">Neobank</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="platform">
+                <div class="platform__border">
+                  <div class="platform__wrap">
+                    <p class="small-text">Decentralized swaps</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="platform">
+                <div class="platform__border">
+                  <div class="platform__wrap">
+                    <p class="small-text">Crowdfunding platforms (IDO)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="platform">
+                <div class="platform__border">
+                  <div class="platform__wrap">
+                    <p class="small-text">Investment platforms</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="platform">
+                <div class="platform__border">
+                  <div class="platform__wrap">
+                    <p class="small-text">Metaverse SDK</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="platform">
+                <div class="platform__border">
+                  <div class="platform__wrap">
+                    <p class="small-text">Mobile wallet</p>
+                  </div>
+                </div>
+              </div>
+              <div class="platform">
+                <div class="platform__border">
+                  <div class="platform__wrap">
+                    <p class="small-text">Decentralized exchange</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="platform">
+                <div class="platform__border">
+                  <div class="platform__wrap">
+                    <p class="small-text">Portfolio management app</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="platform">
+                <div class="platform__border">
+                  <div class="platform__wrap">
+                    <p class="small-text">Payment apps for merchants</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="platform">
+                <div class="platform__border">
+                  <div class="platform__wrap">
+                    <p class="small-text">Staking platform</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="platform">
+                <div class="platform__border">
+                  <div class="platform__wrap">
+                    <p class="small-text">P2E</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-section" id="how">
+        <div class="container">
+          <h2 class="section-title">How do we <span class="gradient-text">work</span></h2>
+          <div class="how-wrap">
+            <div class="row row--how">
+              <div class="col col-tb-6 col-lg-4">
+                <div class="how">
+                  <div class="how__wrap">
+                    <div class="how__img">
+                      <img src="assets/images/how1.svg" alt="img" />
+                      <span class="blur-bg"></span>
+                    </div>
+                    <p class="big-text mb-15">Initial consultation</p>
+                    <p class="base-text">Understand client needs and provide expert advice</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-tb-6 col-lg-4">
+                <div class="how">
+                  <div class="how__wrap">
+                    <div class="how__img">
+                      <img src="assets/images/how2.svg" alt="img" />
+                      <span class="blur-bg"></span>
+                    </div>
+                    <p class="big-text mb-15">Project Planning</p>
+                    <p class="base-text">Create detailed project plan, set scope, deliverables, timelines, milestones</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-tb-6 col-lg-4">
+                <div class="how">
+                  <div class="how__wrap">
+                    <div class="how__img">
+                      <img src="assets/images/how3.svg" alt="img" />
+                      <span class="blur-bg"></span>
+                    </div>
+                    <p class="big-text mb-15">Development and Execution</p>
+                    <p class="base-text">Use latest technologies, work closely with client</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-tb-6 col-lg-4">
+                <div class="how">
+                  <div class="how__wrap">
+                    <div class="how__img">
+                      <img src="assets/images/how4.svg" alt="img" />
+                      <span class="blur-bg"></span>
+                    </div>
+                    <p class="big-text mb-15">Assurance and Testing</p>
+                    <p class="base-text">Understand client needs and provide expert advice</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col-tb-6 col-lg-4">
+                <div class="how">
+                  <div class="how__wrap">
+                    <div class="how__img">
+                      <img src="assets/images/how5.svg" alt="img" />
+                      <span class="blur-bg"></span>
+                    </div>
+                    <p class="big-text mb-15">Delivery and Support</p>
+                    <p class="base-text">Deliver final product, provide ongoing support and maintenance.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-section" id="portfolio">
+        <div class="container">
+          <h2 class="section-title text-center mb-5">Portfolio</h2>
+
+          <div class="portfolio-body">
+            <div class="portfolio-wrap">
+              <div class="row row--portfolio">
+                <div class="col col--portfolio col-tb-6 col-lg-4">
+                  <div class="portfolio">
+                    <div class="portfolio__wrap">
+                      <div class="portfolio__img mb-2">
+                        <img src="assets/images/portfolio-1.webp" alt="portfolio" loading="lazy"/>
+                      </div>
+                      <p class="big-text mb-15">cryptokombat.com</p>
+                      <p class="base-text">Front-end, Back-end, Smart Contracts & Deploy infrastructure</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col col--portfolio col-tb-6 col-lg-4">
+                  <div class="portfolio">
+                    <div class="portfolio__wrap">
+                      <div class="portfolio__img mb-2">
+                        <img src="assets/images/portfolio-2.webp" alt="portfolio" loading="lazy"/>
+                      </div>
+                      <p class="big-text mb-15">genshards.com</p>
+                      <p class="base-text">Front-end, Back-end, Smart Contracts & Deploy infrastructure</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col col--portfolio col-tb-6 col-lg-4">
+                  <div class="portfolio">
+                    <div class="portfolio__wrap">
+                      <div class="portfolio__img mb-2">
+                        <img src="assets/images/portfolio-3.webp" alt="portfolio" loading="lazy"/>
+                      </div>
+                      <p class="big-text mb-15">talecraft.io</p>
+                      <p class="base-text">QA, Front-end, Back-end, Smart Contracts</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col col--portfolio col-tb-6 col-lg-4">
+                  <div class="portfolio">
+                    <div class="portfolio__wrap">
+                      <div class="portfolio__img mb-2">
+                        <img src="assets/images/portfolio-4.webp" alt="portfolio" loading="lazy"/>
+                      </div>
+                      <p class="big-text mb-15">beta.minebarons.io</p>
+                      <p class="base-text">Front-end, Back-end</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col col--portfolio col-tb-6 col-lg-4">
+                  <div class="portfolio">
+                    <div class="portfolio__wrap">
+                      <div class="portfolio__img mb-2">
+                        <img src="assets/images/portfolio-5.webp" alt="portfolio" loading="lazy"/>
+                      </div>
+                      <p class="big-text mb-15">aqueduct.club</p>
+                      <p class="base-text">Deploy infrastructure, Smart Contracts & Backend</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col col--portfolio col-tb-6 col-lg-4">
+                  <div class="portfolio">
+                    <div class="portfolio__wrap">
+                      <div class="portfolio__img mb-2">
+                        <img src="assets/images/portfolio-6.webp" alt="portfolio" loading="lazy"/>
+                      </div>
+                      <p class="big-text mb-15">nftmap.com</p>
+                      <p class="base-text">Front-end, Back-end, Smart Contracts, Deploy infrastructure & QA</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col col--portfolio">
+                  <div class="portfolio-more">
+                    <div class="portfolio-more__wrap">
+                      <div class="portfolio-more__card1">
+                        <img src="assets/images/portfolio-card1-lg.webp" alt="portfolio" loading="lazy"/>
+                      </div>
+                      <div class="portfolio-more__text">
+                        <h4 class="portfolio-more__title mb-15">Explore all our cases</h4>
+                        <p class="base-text text-center mb-3">Front-end, Back-end, Smart Contracts & Deploy infrastructure</p>
+                        <a href="#" class="btn primary big mx-auto">Contact us</a>
+                      </div>
+                      <div class="portfolio-more__card2 tablet">
+                        <img src="assets/images/portfolio-card2.webp" alt="portfolio" loading="lazy"/>
+                      </div>
+                      <span class="shadow"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-section" id="why">
+        <div class="container">
+          <h2 class="section-title">Why <span class="gradient-text"> GRPLabs</span></h2>
+
+          <div class="why-body">
+            <div class="row row--why">
+              <div class="col col--why col-tb-6 col-lg-4">
+                <div class="why">
+                  <div class="why__wrap">
+                    <div class="why__img">
+                      <img src="assets/images/why1.svg" alt="img" />
+                      <span class="blur-bg"></span>
+                    </div>
+                    <p class="big-text mb-15">Experience and Expertise</p>
+                    <p class="base-text">
+                      At GRPLabs, we have extensive experience and expertise in the blockchain, web3, and crypto space. We have worked on a wide
+                      range of projects for clients in various.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col--why col-tb-6 col-lg-4">
+                <div class="why">
+                  <div class="why__wrap">
+                    <div class="why__img">
+                      <img src="assets/images/why2.svg" alt="img" />
+                      <span class="blur-bg"></span>
+                    </div>
+                    <p class="big-text mb-15">High-Quality Services</p>
+                    <p class="base-text">
+                      We are committed to providing our clients with high-quality services that meet their specific needs and exceed their
+                      expectations. We use the latest technologies and best practices.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col col--why col-tb-6 col-lg-4">
+                <div class="why">
+                  <div class="why__wrap">
+                    <div class="why__img">
+                      <img src="assets/images/why3.svg" alt="img" />
+                      <span class="blur-bg"></span>
+                    </div>
+                    <p class="big-text mb-15">Flexibility and Customization</p>
+                    <p class="base-text">
+                      We understand that every client is unique and has specific needs. We offer a wide range of services and can tailor our
+                      solutions to meet the needs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <div class="contact">
+            <div class="contact__wrap">
+              <div class="contact__video">
+                <video src="assets/video/contact-bg.mp4" muted autoplay playsinline></video>
+              </div>
+              <div class="contact__title-col">
+                <h2 class="section-title contact__title">Contact us</h2>
+                <a href="mailto:contact@grplabs.com" class="link-underline">contact@grplabs.com</a>
+              </div>
+              <div class="contact__form">
+                <form action="#" class="form">
+                  <div class="form__wrap">
+                    <div class="form__field js-form-field">
+                      <input type="text" name="name" id="name" class="form__input" placeholder="Your name" required>
+                      <span class="form__label js-form-label">Your name</span>
+                      <p class="form__valid">Field could not be empty</p>
+                    </div>
+                    <div class="form__field js-form-field">
+                      <input type="email" name="email" id="email" class="form__input" placeholder="Your email" required>
+                      <span class="form__label js-form-label">Your email</span>
+                      <p class="form__valid">Field could not be empty</p>
+                    </div>
+                    <div class="form__field">
+                      <textarea class="form__input form__input--textarea scroll-wrap" placeholder="Message"></textarea>
+                      <span class="form__label">Message</span>
+                      <p class="form__valid">Please, specify your request</p>
+                    </div>
+                    <div class="form__btn">
+                      <button type="submit" class="btn primary big">Send a request</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a href="index.html" class="logo footer__logo mb-2">
+            <img src="assets/images/logo.svg" alt="img" />
+          </a>
+          <div class="footer__links">
+            <nav class="footer__nav">
+              <ul class="nav-list">
+                <li class="nav-list__item"><a href="#about" class="nav-link js-link-to">About us</a></li>
+                <li class="nav-list__item"><a href="#services" class="nav-link js-link-to">Services</a></li>
+                <li class="nav-list__item"><a href="#how" class="nav-link js-link-to">How do we work</a></li>
+                <li class="nav-list__item"><a href="#portfolio" class="nav-link js-link-to">Portfolio</a></li>
+                <li class="nav-list__item"><a href="#why" class="nav-link js-link-to">Why us</a></li>
+              </ul>
+            </nav>
+            <div class="footer__socials">
+              <ul class="socials">
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <img src="assets/images/twitter.svg" alt="img">
+                  </a>
                 </li>
-                <li>
-                  <a href="https://www.instagram.com/" class="link-s" target="_blank">In</a>
-                </li> -->
-                <li>
-                  <a href="https://t.me/grplabs" target="_blank"  class="link-s" >Telegram</a>
-                </li>
-                <li>
-                  <a href="https://docsend.com/view/ybqtbtrgb25yp46e" target="_blank"  class="link-s" >Presentation</a>
+                <li class="socials__item">
+                  <a href="#" class="socials__link">
+                    <img src="assets/images/telegram.svg" alt="img">
+                  </a>
                 </li>
               </ul>
             </div>
-            <!-- Socials End -->
-
-            <!-- Copyright Start -->
-              <div class="copyright">
-                <p><a href="#" class="link-s" target="_blank">grplabs</a> 2022 <br>all rihts reserved</p>
-              </div>
-              <!-- Copyright End -->
-
           </div>
         </div>
-
-        <!-- Scale Out Animation Hover Layer Start -->
-        <div class="main__hover"></div>
-        <!-- Scale Out Animation Hover Layer End -->
-
-      </div>
-    </section>
-    <!-- Main Screen Slider Section End -->
-
-    <!-- Notify Me Popup Start -->
-    <div id="notify" class="popup notify">
-
-      <!-- Popup Background Captions Start -->
-      <div class="popup__background">
-        <span class="section-caption bright left">We are</span>
-        <span class="section-caption bright right">almost here</span>
-      </div>
-      <!-- Popup Background Captions End -->
-
-      <!-- Popup Container Start -->
-      <div class="popup__container">
-
-        <!-- Popup Controls Start -->
-        <div class="popup__controls">
-          <a class="popup-close link-s" href="https://grplabs.com/template/index.html#0" id="notify-close">Close</a>
-        </div>
-        <!-- Popup Controls End -->
-
-        <!-- Popup Content Start -->
-        <div class="popup__content">
-
-          <!-- Notify Popup Title Start -->
-          <div class="content-block popup-title">
-            <p class="popup-title__title">Get to <span class="outline-white">know</span> about our launch</p>
-            <p class="popup-title__text">Subscribe to our newsletter and we will send you a notification about the launch of our brand new site.</p>
+        <div class="footer__bottom">
+          <div class="footer__links">
+            <p class="small-text footer__copyright">@2023 GRPLabs. All rights reserved.</p>
+            <ul class="link-list">
+              <li class="link-list__item"><a href="#about" target="_blank" class="nav-link">Terms</a></li>
+              <li class="link-list__item"><a href="#services" target="_blank" class="nav-link">Privacy policy</a></li>
+              <li class="link-list__item"><a href="#how" target="_blank" class="nav-link">Cookies</a></li>
+            </ul>
           </div>
-          <!-- Notify Popup Title End -->
-
-          <!-- Notify Form Container Start -->
-          <div class="content-block">
-            <div class="form-container">
-
-              <!-- Reply Messages Start-->
-              <div class="reply-group subscription-ok">
-                <i class="fa-solid fa-circle-check reply-group__icon"></i>
-                <p class="reply-group__title txt-light">Done!</p>
-                <span class="reply-group__text">Thanks for subscribing. We will send you a notification about our launch.</span>
-              </div>
-              <div class="reply-group subscription-error">
-                <i class="fa-solid fa-face-sad-tear reply-group__icon"></i>
-                <p class="reply-group__title">Ooops!</p>
-                <span class="reply-group__text">Something went wrong. Please try again later.</span>
-              </div>
-              <!-- Reply Messages End-->
-
-              <!-- Notify Contact Form Start-->
-              <form class="form notify-form form-light" novalidate="true">
-                <input class="" type="email" placeholder="Email Adress*" required="" name="EMAIL">
-                <span class="inputs-description">*Required fields</span>
-                <button class="btn btn-fill link-l" type="submit">
-                  <span class="caption">Send</span>
-                </button>
-              </form>
-              <!-- Notify Contact Form End-->
-
-            </div>
-          </div>
-          <!-- Notify Form Container End -->
-
         </div>
-        <!-- Popup Content End -->
-
       </div>
-      <!-- Popup Container End -->
-
-    </div>
-    <!-- Notify Me Popup End -->
-
-    <!-- Say Hello Popup Start -->
-    <div id="sayhello" class="popup sayhello">
-
-      <!-- Popup Background Captions Start -->
-      <div class="popup__background">
-        <span class="section-caption bright left">Just say</span>
-        <span class="section-caption bright right">hello</span>
-      </div>
-      <!-- Popup Background Captions End -->
-
-      <!-- Popup Container Start -->
-      <div class="popup__container">
-
-        <!-- Popup Controls Start -->
-        <div class="popup__controls">
-          <a class="popup-close link-s" href="https://grplabs.com/template/index.html#0" id="sayhello-close">Close</a>
-        </div>
-        <!-- Popup Controls End -->
-
-        <!-- Popup Content Start -->
-        <div class="popup__content">
-
-          <!-- Say Hello Popup Title Start -->
-          <div class="content-block popup-title">
-            <p class="popup-title__title">Want to know more about us, tell us about
-              <span class="outline-white">your project</span>
-              or just to say hello?
-            </p>
-            <p class="popup-title__text">Drop us a line and we will get back as soon as possible.</p>
-          </div>
-          <!-- Say Hello Popup Title End -->
-
-          <!-- Say Hello Form Container Start -->
-          <div class="content-block">
-            <div class="form-container">
-
-              <!-- Say Hello Form Reply Group Start -->
-              <div class="reply-group">
-                <i class="fa-solid fa-circle-check reply-group__icon"></i>
-                <p class="reply-group__title">Done!</p>
-                <span class="reply-group__text">Thanks for your message. We will get back as soon as possible.</span>
-              </div>
-              <!-- Say Hello Form Reply Group End -->
-
-              <!-- Say Hello Form Start -->
-              <form class="form sayhello-form form-light" id="sayhello-form">
-                <!-- Hidden Required Fields -->
-                <!-- <input type="hidden" name="project_name" value="GRPLabs - Coming Soon &amp; Landing Page Template"> -->
-                <input type="hidden" name="admin_email" value="support@mixdesign.club">
-                <input type="hidden" name="form_subject" value="Say Hello Form Message">
-                <!-- END Hidden Required Fields-->
-                <input class="input-1" type="text" name="Name" placeholder="Your Name*" required="">
-                <input class="input-2" type="email" name="E-mail" placeholder="Email Adress*" required="">
-                <textarea class="" name="Message" placeholder="A Few Words*" required=""></textarea>
-                <span class="inputs-description">*Required fields</span>
-                <button class="btn btn-fill link-l">
-                  <span class="caption">Send</span>
-                </button>
-              </form>
-              <!-- Say Hello Form End  -->
-
-            </div>
-          </div>
-          <!-- Say Hello Form Container End -->
-
-        </div>
-        <!-- Popup Content End -->
-
-      </div>
-      <!-- Popup Container End -->
-
-    </div>
-    <!-- Say Hello Popup End -->
-
-    <!-- Custom HTML End -->
-
-    <!-- Root element of PhotoSwipe. Must have class pswp. -->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-      <!-- Background of PhotoSwipe.
-      It's a separate element, as animating opacity is faster than rgba(). -->
-      <div class="pswp__bg"></div>
-
-      <!-- Slides wrapper with overflow:hidden. -->
-      <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-          <div class="pswp__top-bar">
-
-            <!--  Controls are self-explanatory. Order can be changed. -->
-
-            <div class="pswp__counter"></div>
-
-            <button class="pswp__button pswp__button--close link-s" title="Close (Esc)"></button>
-
-            <button class="pswp__button pswp__button--share link-s" title="Share"></button>
-
-            <button class="pswp__button pswp__button--fs link-s" title="Toggle fullscreen"></button>
-
-            <button class="pswp__button pswp__button--zoom link-s" title="Zoom in/out"></button>
-
-            <!-- element will get class pswp__preloader-active when preloader is running -->
-            <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
-                    </div>
-            </div>
-          </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left link-s" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right link-s" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-    <!-- Custom Cursor -->
-    <div class="cursor" style="left: 585px; top: 8px;"></div>
-
-    <!-- Load Scripts Start -->
-    <script src="./template/libs.min.js"></script>
-    <script src="./template/gallery-init.js"></script>
-    <script src="./template/custom.js"></script>
-    <script src="./template/map(1).js"></script>
-    <script src="./template/js"></script>
-    <!-- Load Scripts End -->
-<mini-popup></mini-popup></body></html>
+    </footer>
+  </div>
+  <script src="assets/js/vendor.min.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
